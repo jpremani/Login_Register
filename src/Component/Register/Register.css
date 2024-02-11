@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:ital,wght@1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto,sans-serif";
+}
+.container{
+    /* margin: 0;
+    padding: 0; */
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.RegisterPage .WelcomeIcon{
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisterPage h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: Protest Riot,sans-serif;  
+    width: 100%;
+    font-size: 2rem;
+    
+}
+.WelcomeIcon img {
+    /* width: 100%; */
+    max-width: 500px; /* Limit image width */
+    height: 350px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+
+.register{
+    width: 80%;
+    /* height: 70%; */
+    max-width: 500px;
+    background-color: rgb(222, 247, 247);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 35px;
+}
+.register form input:hover{
+    background-color: rgb(219, 228, 236);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.register form input{
+    border-radius: 10px;
+    width: 240px;
+    height: 35px;
+
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .WelcomeIcon{
+        display: none;
+    }
+    
+    .RegisterPage h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    
+    .register {
+        max-width: none; 
+        margin-left: auto;/* Remove max-width for smaller screens */
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 350px) {
+    .register form{
+        width: auto;
+        height: auto;
+    }
+    .register form input{
+        width: 200px;
+        height: 30px;
+    }
+
+}

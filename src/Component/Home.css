@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Protest+Riot&family=Roboto:ital,wght@1,100&display=swap');
+body{
+   
+  background-image: linear-gradient(
+    to right top,
+    rgba(5, 25, 55, 0.6),
+    rgba(0, 77, 122, 0.6),
+    rgba(0, 135, 147, 0.6),
+    rgba(0, 191, 114, 0.6),
+    rgba(168, 235, 18, 0.6)
+  )
+}
+
+aside span{
+    color: white;
+    display: block;
+    margin: 10px;
+    
+}
+aside{
+    /* width: 440px; */
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor:pointer;
+}
+aside span:hover{
+    color: rgb(168, 168, 233);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 10f 1fr;
+}
+.main{
+    display: block;
+    
+    color: white;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.heading{
+    font-size: 66px;
+    word-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.main p{
+    text-align: center;
+    margin-left: -230px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.main button{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 230px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
